@@ -1,6 +1,4 @@
-import Button from "../button/Button";
-import RandomBtn from "../randomBtn/RandomBtn";
-import ResetBtn from "../resetBtn/ResetBtn";
+import Buttons from "../buttons/buttons";
 import "./hook.css"
 import { useState } from "react"
 
@@ -15,20 +13,7 @@ export default function Hook() {
     return (
         <>
             <h3>mood: {mood}</h3>
-            <div className="hook">
-                <Button mood="Happy 😉" countKey="Happy" setMood={setMood} list={list} setList={setList} count={count} setCount={setCount} />
-                <Button mood="Happy 😣" countKey="Sad" setMood={setMood} list={list} setList={setList} count={count} setCount={setCount} />
-                <Button mood="Angry 😡" countKey="Angry" setMood={setMood} list={list} setList={setList} count={count} setCount={setCount} />
-            </div>
-            <RandomBtn setMood={setMood} setList={setList} setCount={setCount} arr={arr} random={random} list={list} count={count} countRandom={countRandom} />
-            <ResetBtn setMood={setMood} setList={setList} setCount={setCount}/>
-            {/* <div className="singleDiv">
-                <button className="button reset" onClick={() => {
-                    setMood("Neutral");
-                    setList([])
-                    setCount({ "Happy": 0, "Sad": 0, "Angry": 0 })
-                }}>reset</button>
-            </div> */}
+            <Buttons setMood={setMood} setList={setList} setCount={setCount} list={list} count={count} arr={arr} random={random} countRandom={countRandom}/>
             <h3>Mood Counter</h3>
             <p>Happy: {count["Happy"]}</p>
             <p>Sad: {count["Sad"]}</p>
