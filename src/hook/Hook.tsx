@@ -1,4 +1,4 @@
-import Buttons from "../buttons/buttons";
+import Buttons from "../buttons/Buttons";
 import "./hook.css"
 import { useState } from "react"
 
