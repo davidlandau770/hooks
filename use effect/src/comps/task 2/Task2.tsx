@@ -9,10 +9,10 @@ export default function Task2() {
     }, [print])
 
     return (
-        <div>
-            <p>Task 2: </p>
+        <div className="block">
+            <p className="title">Task 2: </p>
             {/* רק הכפתור הראשון מדפיס לקונסול */}
-            <p onClick={() => {setPrint(print + 1)}}>Hello Operator</p>
+            <p className="pCount" onClick={() => {setPrint(print + 1)}}>Hello Operator</p>
             <p onClick={() => {setPrint2(print2 + 1)}}>Hello Operator2</p>
         </div>
     )

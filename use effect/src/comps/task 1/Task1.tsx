@@ -8,9 +8,9 @@ export default function Task1() {
     }, [])
 
     return (
-        <div>
-            <p>Task 1: </p>
-            <p onClick={() => {setPrint(print + 1)}}>Hello Operator</p>
+        <div className="block">
+            <p className="title">Task 1: </p>
+            <p className="pCount" onClick={() => {setPrint(print + 1)}}>Hello Operator</p>
         </div>
     )
 }
