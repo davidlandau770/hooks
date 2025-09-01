@@ -15,7 +15,6 @@ export default function Task3() {
         const getFromAPI = async () => {
             response = await fetch("https://api.thecatapi.com/v1/images/search");
             setGet(response.text())
-            // setGet(data);
         }
 
         getFromAPI()
