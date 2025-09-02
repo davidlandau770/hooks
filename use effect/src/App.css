@@ -45,7 +45,7 @@ p {
 
 button {
     padding: 8px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     background-color: rgb(254, 255, 215);
     cursor: pointer;
     border-radius: 15px;
@@ -61,7 +61,7 @@ input {
     width: 45%;
     padding: 8px;
     background-color: rgb(254, 255, 215);
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     border-radius: 8px;
 }
 

@@ -1,0 +1,31 @@
+.div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 10px;
+    width: 80%;
+}
+
+.dark {
+    background-color: #222;
+    color: rgb(255, 255, 172);
+    padding: 10px 30px;
+}
+
+.light {
+    background-color: rgb(255, 255, 172);
+    color: #222;
+    padding: 10px 30px;
+    border: 1px solid #aaa;
+}
